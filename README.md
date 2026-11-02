@@ -1,11 +1,11 @@
-# costopt_jd062
+# pipeline_parallel_bubble_schema_check
 
 **校验推理成本优化顾问·流水线并行气泡比例的字段结构并列出缺失项。**
 
-`costopt_jd062` —— 从样本里推断推理成本优化顾问·流水线并行气泡比例应有的字段集合，逐字段检查存在性与类型，缺失项单独列出
+`pipeline_parallel_bubble_schema_check` —— 从样本里推断推理成本优化顾问·流水线并行气泡比例应有的字段集合，逐字段检查存在性与类型，缺失项单独列出
 
 - 零依赖，Python 3.10+ 标准库即可运行
-- 单文件，`costopt_jd062.py` 拷走就能用
+- 单文件，`pipeline_parallel_bubble_schema_check.py` 拷走就能用
 - 不联网、不写文件
 
 ## 对应的岗位
@@ -23,16 +23,16 @@
 零依赖，Python 3.10+ 即可：
 
 ```bash
-pip install henderwar-costopt_jd062
+pip install henderwar-pipeline_parallel_bubble_schema_check
 ```
 
 装完直接用命令名调用：
 
 ```bash
-costopt_jd062 --help
+pipeline_parallel_bubble_schema_check --help
 ```
 
-也可以不用安装，直接把 `costopt_jd062.py` 拷走用——它只依赖标准库。
+也可以不用安装，直接把 `pipeline_parallel_bubble_schema_check.py` 拷走用——它只依赖标准库。
 
 ## 为什么需要它
 
@@ -47,9 +47,9 @@ costopt_jd062 --help
 ## 用法
 
 ```bash
-python costopt_jd062.py --file input.txt
-python costopt_jd062.py --text "示例内容"
-python costopt_jd062.py --file input.txt --json
+python pipeline_parallel_bubble_schema_check.py --file input.txt
+python pipeline_parallel_bubble_schema_check.py --text "示例内容"
+python pipeline_parallel_bubble_schema_check.py --file input.txt --json
 ```
 
 加 `--json` 可以拿到机器可读的结果，便于接到流水线里。
@@ -62,7 +62,7 @@ python costopt_jd062.py --file input.txt --json
 ## 跑测试
 
 ```bash
-python test_costopt_jd062.py
+python test_pipeline_parallel_bubble_schema_check.py
 ```
 
 测试用独立的断言与临时数据，不污染工作目录。
@@ -70,7 +70,7 @@ python test_costopt_jd062.py
 ## 来源与参考
 
 - Python 标准库文档：<https://docs.python.org/3/>
-- GitHub 仓库：<https://github.com/henderwar/costopt_jd062>
+- GitHub 仓库：<https://github.com/henderwar/pipeline_parallel_bubble_schema_check>
 
 ---
 
@@ -79,7 +79,7 @@ python test_costopt_jd062.py
 henderwar 做推理成本优化顾问·流水线并行气泡比例相关的问题，方向对标小米的初级推理成本优化顾问岗位。这个工具先替你回答一个具体问题，再谈别的。
 
 - 个人主页：<https://henderwar.github.io>
-- 仓库：<https://github.com/henderwar/costopt_jd062>
+- 仓库：<https://github.com/henderwar/pipeline_parallel_bubble_schema_check>
 
 ## 许可
 
